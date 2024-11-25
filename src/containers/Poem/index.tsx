@@ -4,7 +4,9 @@ import * as S from './styled';
 const Poem = () => {
   return (
     <S.PoemWrapper>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, nemo doloribus! Quidem, distinctio nesciunt aliquam, vero eaque nihil voluptates ratione fugit ad temporibus doloribus itaque nobis quae quia consequatur exercitationem.
+      O fato é, quando estou só o ar fica rarefeito
+      E quando estamos juntos fico satisfeito
+
     </S.PoemWrapper>
   )
 }

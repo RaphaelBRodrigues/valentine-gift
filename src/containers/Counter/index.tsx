@@ -6,7 +6,9 @@ const Counter = () => {
   const timer = useTimer();
 
   return (
-    <S.CounterWrapper>{timer}</S.CounterWrapper>
+    <S.CounterWrapper>
+      Sou grato por todos os {timer} que tive <br /> a honra de passar ao seu lado.
+    </S.CounterWrapper>
   )
 }
 
