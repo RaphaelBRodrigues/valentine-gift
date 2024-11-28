@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const HomeWrapper = styled.div`
   width: 100%;
+  overflow: hidden;
   height: 100vh;
   background-size: 100%;
   background-repeat: repeat;
