@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "https://raphaelbrodrigues.github.io/valentine-gift/static/css/main.c4ee3fbe.css",
-    "main.js": "https://raphaelbrodrigues.github.io/valentine-gift/static/js/main.02bcb918.js",
+    "main.js": "https://raphaelbrodrigues.github.io/valentine-gift/static/js/main.c1d64c7f.js",
     "static/js/453.9b66d7d1.chunk.js": "https://raphaelbrodrigues.github.io/valentine-gift/static/js/453.9b66d7d1.chunk.js",
     "index.html": "https://raphaelbrodrigues.github.io/valentine-gift/index.html",
     "main.c4ee3fbe.css.map": "https://raphaelbrodrigues.github.io/valentine-gift/static/css/main.c4ee3fbe.css.map",
-    "main.02bcb918.js.map": "https://raphaelbrodrigues.github.io/valentine-gift/static/js/main.02bcb918.js.map",
+    "main.c1d64c7f.js.map": "https://raphaelbrodrigues.github.io/valentine-gift/static/js/main.c1d64c7f.js.map",
     "453.9b66d7d1.chunk.js.map": "https://raphaelbrodrigues.github.io/valentine-gift/static/js/453.9b66d7d1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c4ee3fbe.css",
-    "static/js/main.02bcb918.js"
+    "static/js/main.c1d64c7f.js"
   ]
 }
