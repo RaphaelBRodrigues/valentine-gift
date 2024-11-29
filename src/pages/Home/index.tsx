@@ -4,6 +4,7 @@ import Poem from '../../containers/Poem';
 import Counter from '../../containers/Counter';
 import Slider from '../../containers/Slider';
 import Audio from '../../component/Audio';
+import PolaroidContainer from '../../containers/PolaroidContainer';
 
 const Home = () => {
   const homeRef = useRef<HTMLDivElement>(null);
@@ -19,14 +20,12 @@ const Home = () => {
 
   return (
     <S.HomeWrapper ref={homeRef}>
-
       <S.Background />
       {userAlreadyInteract && <Audio />}
-      <Poem />
-      <Slider />
+      {/* <Poem /> */}
+      <PolaroidContainer />
       <Counter />
 
-      {/* {/* <Slider /> /* */}
     </S.HomeWrapper>
   )
 }

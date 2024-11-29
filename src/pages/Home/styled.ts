@@ -2,15 +2,14 @@ import styled from "styled-components";
 
 export const HomeWrapper = styled.div`
   width: 100%;
-  overflow: hidden;
   height: 100vh;
   background-size: 100%;
-  background-repeat: repeat;
-  background-color: black;
-  background-image: url("https://i.pinimg.com/originals/05/59/94/05599424bb5a1b7819956d0288559697.gif"); 
-  /* background-image: url("https://raw.githubusercontent.com/RaphaelBRodrigues/valentine-gift/refs/heads/master/src/assets/flowers.gif");  */
+  background-image: url("https://ipfs.pixura.io/ipfs/QmU8aG1zKKF2pHGT1d4ptJX98VLcJt9Wpv5kBmDf8EZe3e/EndlessSummer_GenuineHumanArt.gif"); 
+  background-size: 500%;
   background-position: 0;
-  `;
+  background-position-x: 50%;
+  position: fixed;
+`;
 
 export const Background = styled.div`
     background-color: black;
@@ -19,7 +18,8 @@ export const Background = styled.div`
     width: 100%;
     left: 0;
     top: 0;
-    position: absolute;
+    position: fixed;
+    overflow: hidden;
     height: 100vh;
-  
+    background-repeat: repeat;
 `;
