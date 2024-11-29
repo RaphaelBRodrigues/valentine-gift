@@ -30,7 +30,7 @@ const PolaroidContainer = () => {
             key={image.src}
             date={image.date}
             description={image.description}
-            src={`${process.env.REACT_APP_ASSETS_URL}/${image.src}`}
+            src={`${process.env.REACT_APP_ASSETS_URL}/personal_photos/${image.src}`}
           />
         })}
       </Carousel>
