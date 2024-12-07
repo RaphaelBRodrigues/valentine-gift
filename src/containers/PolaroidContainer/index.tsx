@@ -8,7 +8,7 @@ import 'react-multi-carousel/lib/styles.css';
 const PolaroidContainer = () => {
   const [loadedImages, setLoadedImages] = useState<PolaroidParams[]>([images[0]]);
   const carouselRef = useRef(null);
-  const [currentImage, setCurrentImage] = useState(0)
+  const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
     let currentImageIndex = 1;
@@ -56,6 +56,7 @@ const PolaroidContainer = () => {
         autoPlaySpeed={4000}
         infinite={true}
         swipeable={true}
+        pauseOnHover={true}
         draggable={false}
         responsive={responsive}
       >
