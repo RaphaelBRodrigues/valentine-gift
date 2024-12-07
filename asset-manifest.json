@@ -1,15 +1,18 @@
 {
   "files": {
-    "main.css": "https://raphaelbrodrigues.github.io/valentine-gift/static/css/main.c4ee3fbe.css",
-    "main.js": "https://raphaelbrodrigues.github.io/valentine-gift/static/js/main.c1d64c7f.js",
-    "static/js/453.9b66d7d1.chunk.js": "https://raphaelbrodrigues.github.io/valentine-gift/static/js/453.9b66d7d1.chunk.js",
-    "index.html": "https://raphaelbrodrigues.github.io/valentine-gift/index.html",
-    "main.c4ee3fbe.css.map": "https://raphaelbrodrigues.github.io/valentine-gift/static/css/main.c4ee3fbe.css.map",
-    "main.c1d64c7f.js.map": "https://raphaelbrodrigues.github.io/valentine-gift/static/js/main.c1d64c7f.js.map",
-    "453.9b66d7d1.chunk.js.map": "https://raphaelbrodrigues.github.io/valentine-gift/static/js/453.9b66d7d1.chunk.js.map"
+    "main.css": "https://ive.raphaelbr.dev/static/css/main.93194697.css",
+    "main.js": "https://ive.raphaelbr.dev/static/js/main.84da0e79.js",
+    "static/js/453.9b66d7d1.chunk.js": "https://ive.raphaelbr.dev/static/js/453.9b66d7d1.chunk.js",
+    "static/media/revicons.eot": "https://ive.raphaelbr.dev/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "https://ive.raphaelbr.dev/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "https://ive.raphaelbr.dev/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "https://ive.raphaelbr.dev/index.html",
+    "main.93194697.css.map": "https://ive.raphaelbr.dev/static/css/main.93194697.css.map",
+    "main.84da0e79.js.map": "https://ive.raphaelbr.dev/static/js/main.84da0e79.js.map",
+    "453.9b66d7d1.chunk.js.map": "https://ive.raphaelbr.dev/static/js/453.9b66d7d1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c4ee3fbe.css",
-    "static/js/main.c1d64c7f.js"
+    "static/css/main.93194697.css",
+    "static/js/main.84da0e79.js"
   ]
 }
