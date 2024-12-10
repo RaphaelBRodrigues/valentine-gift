@@ -16,7 +16,7 @@ const Counter = () => {
     __
     Te amo meu amor-------,-- e sou grato por cada um dos ${seconds} segundos que passamos juntos.
     __
-    Por Raphael.
+    Por Raphael
     `
   }, [days])
 
@@ -39,7 +39,9 @@ const Counter = () => {
           });
         }
       } else {
-        setFinalText(true)
+        setTimeout(() => {
+          setFinalText(true);
+        }, 3000)
       }
     }, 150);
 
@@ -56,7 +58,7 @@ const Counter = () => {
           <br /> <br />
           Te amo meu amor, e sou grato por cada um dos {seconds} segundos que passamos juntos.
           <br /><br />
-          Por Raphael.
+          Por Raphael ❤️
         </div>
       </> : <> <div dangerouslySetInnerHTML={{ __html: `${text} <span> </span>` }}></div></>}
     </S.CounterWrapper>

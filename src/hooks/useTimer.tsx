@@ -38,7 +38,6 @@ export const useTimer = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      console.log("interval")
       updateTimer();
     }, 1000);
 

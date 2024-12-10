@@ -15,6 +15,9 @@ export const CounterWrapper = styled.div`
   position: relative;
   z-index: 4;
   font-family: Typewriter;
+  line-height: 20px;
+  width: 85%;
+  margin: 0 auto;
   
   span {
     border-right: 1.5px solid white;
