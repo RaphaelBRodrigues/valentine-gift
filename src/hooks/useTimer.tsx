@@ -1,18 +1,24 @@
 import { useCallback, useEffect, useState } from "react"
 
+const initialDate = new Date("2023-12-14 21:00:00");
+const currentDate = new Date();
+
+const initialSeconds = Math.round(Math.abs((currentDate.getTime() - initialDate.getTime()) / 1000));
+const initialMinutes = Math.floor(initialSeconds / 60);
+const initialHours = Math.floor(initialMinutes / 60);
+const initialDays = Math.floor(initialHours / 24);
+
 export const useTimer = () => {
-  const [seconds, setSeconds] = useState(0);
-  const [minutes, setMinutes] = useState(0);
-  const [hour, setHours] = useState(0);
-  const [days, setDays] = useState(0);
+  const [seconds, setSeconds] = useState(initialSeconds);
+  const [minutes, setMinutes] = useState(initialMinutes);
+  const [hour, setHours] = useState(initialHours);
+  const [days, setDays] = useState(initialDays);
   const [weeks, setWeeks] = useState(0);
   const [months, setMonths] = useState(0);
   const [years, setYears] = useState(0);
 
   const updateTimer = useCallback(() => {
-    const initialDate = new Date("2023-12-14 21:00:00");
     const currentDate = new Date();
-
     const totalSeconds = Math.round(Math.abs((currentDate.getTime() - initialDate.getTime()) / 1000));
 
     const totalMinutes = Math.floor(totalSeconds / 60);
@@ -21,10 +27,6 @@ export const useTimer = () => {
     const totalWeeks = Math.floor(totalDays / 7);
     const totalMonths = Math.floor(totalWeeks / 4);
     const totalYears = Math.floor(totalMonths / 12);
-
-    const remainingMonths = (totalYears * 12 * 4 * 7 * 24 * 60 * 60 * 1000);
-
-
     setSeconds(totalSeconds);
     setMinutes(totalMinutes);
     setHours(totalHours);
@@ -35,10 +37,15 @@ export const useTimer = () => {
   }, [])
 
   useEffect(() => {
-    setInterval(() => {
+    const interval = setInterval(() => {
+      console.log("interval")
       updateTimer();
     }, 1000);
-  })
+
+    return () => {
+      clearInterval(interval);
+    }
+  }, [])
 
   return {
     seconds,

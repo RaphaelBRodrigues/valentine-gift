@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import { useTimer } from '../../hooks/useTimer';
 import * as S from './styled';
-import { clear } from 'console';
+
 
 const Counter = () => {
   const {
@@ -10,61 +10,57 @@ const Counter = () => {
   } = useTimer();
   const [text, setText] = useState("");
   const [isFinalText, setFinalText] = useState(false);
-  const draft = `
+  const draft = useMemo(() => {
+    return `
     Há ${days} dias|||||||,|| eu achava que seria o homem mais feliz do mundo ao seu lado. ||||||||||||| Hoje eu tenho certeza.
     __
     Te amo meu amor|||||||,|| e sou grato por cada um dos ${seconds} segundos que passamos juntos.
     __
-    Por Raphael
+    Por Raphael.
     `
+  }, [days])
 
 
   useEffect(() => {
-    if (seconds > 1 && !text.length) {
-      let currentLetterIndex = 0;
+    let currentLetterIndex = 0;
 
-      const interval = setInterval(() => {
-        currentLetterIndex++;
-        const currentLetter = draft[currentLetterIndex];
-        console.log({
-          draft: draft.length,
-          currentLetterIndex,
-          seconds,
-          text: text.length
-        })
-        if (draft.length > currentLetterIndex) {
-          if (currentLetter !== "|") {
-            setText((currentText) => {
-              if (currentLetter === "_") {
-                return currentText + "<br />"
-              }
-              console.log(currentLetter)
-              return currentText + currentLetter;
-            });
-          }
-        } else {
-          setFinalText(true)
+    const interval = setInterval(() => {
+      currentLetterIndex++;
+      const currentLetter = draft[currentLetterIndex];
+
+      if (draft.length > currentLetterIndex) {
+        if (currentLetter !== "|") {
+          setText((currentText) => {
+            if (currentLetter === "_") {
+              return currentText + "<br />"
+            }
+
+            return currentText + currentLetter;
+          });
         }
-      }, 150);
-
-      return () => {
-        console.log("ue")
-        clearInterval(interval);
+      } else {
+        setFinalText(true)
       }
+    }, 150);
+
+    return () => {
+      console.log("ue")
+      clearInterval(interval);
     }
-  }, [seconds]);
+  }, []);
 
   return (
     <S.CounterWrapper>
+      {seconds}
       {isFinalText ? <>
         <div>
-        Há {days} dias, eu achava que seria o homem mais feliz do mundo ao seu lado. Hoje eu tenho certeza.
-    <br /> <br />
-    Te amo meu amor, e sou grato por cada um dos ${seconds} segundos que passamos juntos.
-    <br /><br />
-    Por Raphael
+          Há {days} dias, eu achava que seria o homem mais feliz do mundo ao seu lado. Hoje eu tenho certeza.
+          <br /> <br />
+          Te amo meu amor, e sou grato por cada um dos {seconds} segundos que passamos juntos.
+          <br /><br />
+          Por Raphael.
         </div>
-      </>  : <div dangerouslySetInnerHTML={{ __html: text }}></div>}
+      </> : <div dangerouslySetInnerHTML={{ __html: text }}></div>}
     </S.CounterWrapper>
   )
 }
