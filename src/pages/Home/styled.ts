@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 export const HomeWrapper = styled.div`
   width: 100%;
   height: 100vh;
@@ -9,6 +8,10 @@ export const HomeWrapper = styled.div`
   background-position: 0;
   background-position-x: 50%;
   position: fixed;
+
+  .upper {
+    z-index: 999;
+  }
 `;
 
 export const Background = styled.div`

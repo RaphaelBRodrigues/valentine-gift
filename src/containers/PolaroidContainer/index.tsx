@@ -1,66 +1,30 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React from 'react'
 import images from './images.map.json';
 import * as S from './styled';
-import Polaroid, { PolaroidParams } from '../../component/Polaroid';
-import Carousel from 'react-multi-carousel';
+import Polaroid from '../../component/Polaroid';
 import 'react-multi-carousel/lib/styles.css';
+import Slider from 'react-slick'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const PolaroidContainer = () => {
-  const [loadedImages, setLoadedImages] = useState<PolaroidParams[]>([images[0]]);
-  const carouselRef = useRef(null);
-  const [currentImage, setCurrentImage] = useState(0);
-
-  useEffect(() => {
-    let currentImageIndex = 1;
-
-    const loadImageInterval = setInterval(() => {
-      if (currentImageIndex < images.length) {
-        setLoadedImages((loadedImages) => {
-          return [...loadedImages, images[currentImageIndex]]
-        })
-        currentImageIndex++;
-      }
-    }, 1000)
-
-    return () => {
-      clearInterval(loadImageInterval);
-    }
-  }, []);
-
-  useEffect(() => {
-    if (carouselRef.current) {
-
-    }
-  }, [carouselRef]);
-
-  const responsive = {
-    general: {
-      breakpoint: { max: 9000, min: 0 },
-      items: 1
-    }
-  };
-
-  const handleChange = (params: any) => {
-
-  }
-
   return (
-    <S.PolaroidContainerWrapper>
-      <Carousel
-        shouldResetAutoplay={false}
-        showDots={false}
-        autoPlay={true}
-        afterChange={handleChange}
+    <S.PolaroidContainerWrapper className="slider-container">
+      <Slider
+        dots={false}
+        autoplay
+        autoplaySpeed={4000}
+        infinite
+        speed={500}
+        slidesToShow={1}
+        slidesToScroll={1}
         arrows={false}
-        ref={carouselRef}
-        autoPlaySpeed={4000}
-        infinite={true}
-        swipeable={true}
+        initialSlide={1}
+        lazyLoad={"anticipated"}
         pauseOnHover={true}
-        draggable={false}
-        responsive={responsive}
       >
-        {images.map((image, index) => {
+
+        {images.map((image) => {
           return <Polaroid
             key={image.src}
             date={image.date}
@@ -68,9 +32,8 @@ const PolaroidContainer = () => {
             src={`${process.env.REACT_APP_ASSETS_URL}/personal_photos/${image.src}`}
           />
         })}
-      </Carousel>
-
-    </S.PolaroidContainerWrapper>
+      </Slider>
+    </S.PolaroidContainerWrapper >
   )
 }
 
