@@ -2,7 +2,6 @@ import React from 'react'
 import images from './images.map.json';
 import * as S from './styled';
 import Polaroid from '../../component/Polaroid';
-import 'react-multi-carousel/lib/styles.css';
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -15,12 +14,12 @@ const PolaroidContainer = () => {
         autoplay
         autoplaySpeed={4000}
         infinite
-        speed={500}
+        speed={1500}
         slidesToShow={1}
         slidesToScroll={1}
         arrows={false}
         initialSlide={1}
-        lazyLoad={"anticipated"}
+        lazyLoad={"progressive"}
         pauseOnHover={true}
       >
 
