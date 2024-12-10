@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "https://ive.raphaelbr.dev/static/css/main.93194697.css",
-    "main.js": "https://ive.raphaelbr.dev/static/js/main.84da0e79.js",
+    "main.css": "https://ive.raphaelbr.dev/static/css/main.4db80d2e.css",
+    "main.js": "https://ive.raphaelbr.dev/static/js/main.39840a7b.js",
     "static/js/453.9b66d7d1.chunk.js": "https://ive.raphaelbr.dev/static/js/453.9b66d7d1.chunk.js",
     "static/media/revicons.eot": "https://ive.raphaelbr.dev/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "https://ive.raphaelbr.dev/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "https://ive.raphaelbr.dev/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "https://ive.raphaelbr.dev/index.html",
-    "main.93194697.css.map": "https://ive.raphaelbr.dev/static/css/main.93194697.css.map",
-    "main.84da0e79.js.map": "https://ive.raphaelbr.dev/static/js/main.84da0e79.js.map",
+    "main.4db80d2e.css.map": "https://ive.raphaelbr.dev/static/css/main.4db80d2e.css.map",
+    "main.39840a7b.js.map": "https://ive.raphaelbr.dev/static/js/main.39840a7b.js.map",
     "453.9b66d7d1.chunk.js.map": "https://ive.raphaelbr.dev/static/js/453.9b66d7d1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.93194697.css",
-    "static/js/main.84da0e79.js"
+    "static/css/main.4db80d2e.css",
+    "static/js/main.39840a7b.js"
   ]
 }
