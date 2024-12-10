@@ -12,9 +12,9 @@ const Counter = () => {
   const [isFinalText, setFinalText] = useState(false);
   const draft = useMemo(() => {
     return `
-    Há ${days} dias|||||||,|| eu achava que seria o homem mais feliz do mundo ao seu lado. ||||||||||||| Hoje eu tenho certeza.
+    Há ${days} dias-------,-- eu achava que seria o homem mais feliz do mundo ao seu lado. ------------- Hoje eu tenho certeza.
     __
-    Te amo meu amor|||||||,|| e sou grato por cada um dos ${seconds} segundos que passamos juntos.
+    Te amo meu amor-------,-- e sou grato por cada um dos ${seconds} segundos que passamos juntos.
     __
     Por Raphael.
     `
@@ -29,7 +29,7 @@ const Counter = () => {
       const currentLetter = draft[currentLetterIndex];
 
       if (draft.length > currentLetterIndex) {
-        if (currentLetter !== "|") {
+        if (currentLetter !== "-") {
           setText((currentText) => {
             if (currentLetter === "_") {
               return currentText + "<br />"
@@ -44,14 +44,12 @@ const Counter = () => {
     }, 150);
 
     return () => {
-      console.log("ue")
       clearInterval(interval);
     }
   }, []);
 
   return (
     <S.CounterWrapper>
-      {seconds}
       {isFinalText ? <>
         <div>
           Há {days} dias, eu achava que seria o homem mais feliz do mundo ao seu lado. Hoje eu tenho certeza.
@@ -60,7 +58,7 @@ const Counter = () => {
           <br /><br />
           Por Raphael.
         </div>
-      </> : <div dangerouslySetInnerHTML={{ __html: text }}></div>}
+      </> : <> <div dangerouslySetInnerHTML={{ __html: `${text} <span> </span>` }}></div></>}
     </S.CounterWrapper>
   )
 }
