@@ -29,7 +29,7 @@ const PolaroidContainer = () => {
 
   useEffect(() => {
     if (carouselRef.current) {
-      // console.log(carouselRef.current)
+
     }
   }, [carouselRef]);
 
@@ -41,7 +41,7 @@ const PolaroidContainer = () => {
   };
 
   const handleChange = (params: any) => {
-    console.log("PARAMAS ", params);
+
   }
 
   return (

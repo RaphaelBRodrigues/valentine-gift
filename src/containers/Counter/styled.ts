@@ -4,4 +4,5 @@ export const CounterWrapper = styled.div`
   color: white;
   position: relative;
   z-index: 4;
+  font-family: Typewriter;
 `;

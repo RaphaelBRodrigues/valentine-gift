@@ -9,8 +9,8 @@ const Audio = () => {
   }, [ref])
 
   return (
-    <audio controls style={{ display: 'none' }} ref={ref}>
-      <source src="https://github.com/RaphaelBRodrigues/valentine-gift/raw/refs/heads/master/src/assets/soundtrack.mp3" type="audio/mp3" />
+    <audio loop controls style={{ display: 'none' }} ref={ref}>
+      <source src="https://github.com/RaphaelBRodrigues/valentine-gift/raw/refs/heads/master/src/assets/soundtrack.m4a" type="audio/m4a" />
     </audio>
   )
 }

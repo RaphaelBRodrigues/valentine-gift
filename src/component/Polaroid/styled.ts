@@ -4,7 +4,7 @@ export const PolaroidWrapper = styled.div`
   background-color: white;
   width: 90%;
   margin: 0 auto;
-  height: 55vh;
+  height: 52vh;
   
   @media (min-width: 500px){
     width: 40rem;
