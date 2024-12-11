@@ -48,7 +48,7 @@ export const PolaroidDescription = styled.p`
   margin: 0;
   height: auto;
   font-style: oblique;
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
   font-size: 15px;
 `;
