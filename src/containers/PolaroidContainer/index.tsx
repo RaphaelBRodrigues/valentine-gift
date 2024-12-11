@@ -5,7 +5,7 @@ import Polaroid from '../../component/Polaroid';
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+console.log(images)
 const PolaroidContainer = () => {
   return (
     <S.PolaroidContainerWrapper className="slider-container">
@@ -17,7 +17,7 @@ const PolaroidContainer = () => {
         speed={2500}
         slidesToShow={1}
         arrows={false}
-        initialSlide={1}
+        initialSlide={0}
         lazyLoad={"anticipated"}
         pauseOnHover={true}
       >
