@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react"
 
-const initialDate = new Date("2023-12-14 21:00:00");
+const initialDate = new Date("2023-12-11 12:00:00");
 const currentDate = new Date();
 
 const initialSeconds = Math.round(Math.abs((currentDate.getTime() - initialDate.getTime()) / 1000));

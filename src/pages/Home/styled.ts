@@ -3,7 +3,7 @@ export const HomeWrapper = styled.div`
   width: 100%;
   height: 100vh;
   background-size: 100%;
-  background-image: url("https://ipfs.pixura.io/ipfs/QmU8aG1zKKF2pHGT1d4ptJX98VLcJt9Wpv5kBmDf8EZe3e/EndlessSummer_GenuineHumanArt.gif"); 
+  background-image: url("https://raw.githubusercontent.com/RaphaelBRodrigues/valentine-gift/refs/heads/master/src/assets/background.gif"); 
   background-size: 500%;
   background-position: 0;
   background-position-x: 50%;

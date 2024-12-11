@@ -10,7 +10,6 @@ import "slick-carousel/slick/slick-theme.css";
 const Home = () => {
   const homeRef = useRef<HTMLDivElement>(null);
   const [userAlreadyInteract, setUserAlreadyInteract] = useState(false);
-  const [start, setStart] = useState(false);
   const [initialSlide, setInitialSlide] = useState(0);
   const sliderRef = useRef<any>(null);
 
@@ -39,6 +38,7 @@ const Home = () => {
         className='upper'
         dots={false}
         arrows={false}
+        swipeToSlide={false}
         draggable={false}
         autoplaySpeed={4000}
         swipe={false}
