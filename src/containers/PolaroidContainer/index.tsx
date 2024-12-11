@@ -14,9 +14,8 @@ const PolaroidContainer = () => {
         autoplay
         autoplaySpeed={4000}
         infinite
-        speed={1500}
+        speed={2500}
         slidesToShow={1}
-        slidesToScroll={1}
         arrows={false}
         initialSlide={1}
         lazyLoad={"anticipated"}

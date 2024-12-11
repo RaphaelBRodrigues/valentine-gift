@@ -17,7 +17,7 @@ const Polaroid: React.FC<PolaroidParams> = ({
   return (
     <S.PolaroidWrapper>
       <S.PolaroidImageWrapper>
-        <S.PolaroidImage loading='lazy' src={src} />
+        <S.PolaroidImage src={src} />
       </S.PolaroidImageWrapper>
       <S.PolaroidDate>{date}</S.PolaroidDate>
       <S.PolaroidDescription>{description}</S.PolaroidDescription>

@@ -17,22 +17,23 @@ export const PolaroidWrapper = styled.div`
 `;
 
 export const PolaroidImageWrapper = styled.div`
-  width: 85%;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   overflow: hidden;
-  background-color: grey;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   height: 85%;
+  width: 85%;
 `;
 
 export const PolaroidImage = styled.img` 
    width: 100%; 
   height: 100%; 
+  border-radius: 2px;
   position: absolute;
+  object-fit: cover;
   display: block;
 `;
 
