@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "https://ive.raphaelbr.dev/static/css/main.46a02904.css",
-    "main.js": "https://ive.raphaelbr.dev/static/js/main.6b385e9a.js",
+    "main.js": "https://ive.raphaelbr.dev/static/js/main.72ad6f2d.js",
     "static/js/453.9b66d7d1.chunk.js": "https://ive.raphaelbr.dev/static/js/453.9b66d7d1.chunk.js",
     "static/media/slick.svg": "https://ive.raphaelbr.dev/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "https://ive.raphaelbr.dev/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -9,11 +9,11 @@
     "static/media/slick.woff": "https://ive.raphaelbr.dev/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "https://ive.raphaelbr.dev/index.html",
     "main.46a02904.css.map": "https://ive.raphaelbr.dev/static/css/main.46a02904.css.map",
-    "main.6b385e9a.js.map": "https://ive.raphaelbr.dev/static/js/main.6b385e9a.js.map",
+    "main.72ad6f2d.js.map": "https://ive.raphaelbr.dev/static/js/main.72ad6f2d.js.map",
     "453.9b66d7d1.chunk.js.map": "https://ive.raphaelbr.dev/static/js/453.9b66d7d1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.46a02904.css",
-    "static/js/main.6b385e9a.js"
+    "static/js/main.72ad6f2d.js"
   ]
 }
