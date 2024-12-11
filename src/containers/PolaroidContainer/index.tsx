@@ -19,7 +19,7 @@ const PolaroidContainer = () => {
         slidesToScroll={1}
         arrows={false}
         initialSlide={1}
-        lazyLoad={"progressive"}
+        lazyLoad={"anticipated"}
         pauseOnHover={true}
       >
 
