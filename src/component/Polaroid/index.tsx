@@ -14,6 +14,7 @@ const Polaroid: React.FC<PolaroidParams> = ({
   description,
   date
 }) => {
+  console.log(description)
   return (
     <S.PolaroidWrapper>
       <S.PolaroidImageWrapper>
