@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useState } from "react"
 
-const initialDate = new Date("2023-12-14 12:00:00");
 const currentDate = new Date();
-currentDate.setHours(12, 0, 0);
+
+const initialDate = new Date(`2023-12-14 ${currentDate.getHours()}:00:00`);
 
 const initialSeconds = Math.round(Math.abs((currentDate.getTime() - initialDate.getTime()) / 1000));
 const initialMinutes = Math.floor(initialSeconds / 60);
@@ -20,7 +20,6 @@ export const useTimer = () => {
 
   const updateTimer = useCallback(() => {
     const currentDate = new Date();
-    currentDate.setHours(12, 0, 0);
 
     const totalSeconds = Math.round(Math.abs((currentDate.getTime() - initialDate.getTime()) / 1000));
 
