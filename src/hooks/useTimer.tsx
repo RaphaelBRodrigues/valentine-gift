@@ -1,8 +1,9 @@
 import { useCallback, useEffect, useState } from "react"
 
 const currentDate = new Date();
-
-const initialDate = new Date(`2023-12-14 ${currentDate.getHours()}:00:00`);
+const currentHour = currentDate.getHours().toString();
+const fixedHour = currentHour.length === 1 ? `0${currentHour}` : currentHour
+const initialDate = new Date(`2023-12-14 ${fixedHour}:00:00`);
 
 const initialSeconds = Math.round(Math.abs((currentDate.getTime() - initialDate.getTime()) / 1000));
 const initialMinutes = Math.floor(initialSeconds / 60);
